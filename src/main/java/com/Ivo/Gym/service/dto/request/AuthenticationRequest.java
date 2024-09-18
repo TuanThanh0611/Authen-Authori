@@ -1,21 +1,15 @@
-package com.Ivo.Gym.service.dto.reponse;
+package com.Ivo.Gym.service.dto.request;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import java.time.LocalDate;
-
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@NoArgsConstructor
 @FieldDefaults(level= AccessLevel.PRIVATE)
-public class UserResponse {
-    String id;
+public class AuthenticationRequest {
     String userName;
     String email;
     String password;
-    String firstName;
-    String lastName;
-    LocalDate dob;
 }
