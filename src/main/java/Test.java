@@ -1,3 +1,4 @@
+import com.Ivo.Gym.service.dto.reponse.AuthenticationResponse;
 import com.Ivo.Gym.service.dto.request.AuthenticationRequest;
 import com.Ivo.Gym.service.entity.User;
 import com.Ivo.Gym.service.repository.UserRepository;
@@ -19,6 +20,6 @@ public class Test {
         AuthenticationRequest authenticationRequest=new AuthenticationRequest();
         authenticationRequest.setPassword("123456");
         authenticationRequest.setUserName("test");
-        boolean a=authenticationService.authenticateByUserName(authenticationRequest);
+
     }
 }
