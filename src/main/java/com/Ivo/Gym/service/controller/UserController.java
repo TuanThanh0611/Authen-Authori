@@ -22,11 +22,11 @@ public class UserController {
         apiResponse.setResult(userService.createUser(request));
         return apiResponse;
     }
-//    @GetMapping
-//    ApiResponse<List<UserResponse>> getAllUsers(){
-//        return ApiResponse.<List<UserResponse>>builder()
-//        .result(userService.getAllUsers())
-//                .build();
-//    }
+    @GetMapping
+    ApiResponse<List<UserResponse>> getAllUsers(){
+        return ApiResponse.<List<UserResponse>>builder()
+        .result(userService.getAllUsers())
+                .build();
+    }
 
 }

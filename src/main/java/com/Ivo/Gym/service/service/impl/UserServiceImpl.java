@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
         user.setPassword(passwordEncoder.encode(request.getPassword()));
         return mapper.toUserResponse(userRepository.save(user));
     }
-//    public List<UserResponse> getAllUsers(){
-//        return mapper.toListUsers(userRepository.findAll());
-//    }
+    public List<UserResponse> getAllUsers(){
+        return mapper.toListUsers(userRepository.findAll());
+    }
 }
